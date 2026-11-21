@@ -18,14 +18,14 @@ docker compose ps
 | Service | Adresse de vérification |
 |---|---|
 | Angular | http://localhost |
-| API Spring Boot | http://localhost:8085/api/controller/categorie |
+| API Spring Boot | http://localhost:8085/api/controller/categorie/ |
 | phpMyAdmin | http://localhost:8081 |
 
 Pour phpMyAdmin, le compte local est `smarthouse` avec le mot de passe de démonstration `smarthouse-local`. Les mots de passe locaux peuvent être remplacés par les variables `MYSQL_PASSWORD` et `MYSQL_ROOT_PASSWORD`.
 
 ```sh
 curl --fail http://localhost/
-curl --fail http://localhost/api/controller/categorie
+curl --fail http://localhost/api/controller/categorie/
 docker compose logs backend mysql
 docker compose down
 ```
